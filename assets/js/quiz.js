@@ -1,4 +1,3 @@
-var timer =
 
 var questionAnswers = [
     {
@@ -54,6 +53,6 @@ function startQuiz() {
     console.log
 }
 
-buttonEl.addEventListener("click", function() {
+buttonEl.addEventListener("click", function () {
 
 })
