@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/js/style.css">
+</head>
+
+<body>
+    <header id="gameHead" class="centerText">
+        <h1>Quiz Game</h1>
+    </header>
+
+    <hr />
+    <!--Start quiz Button-->
+    <section id="gameStart" class="centerText">
+        <div class="Start">
+            <h2>Press button to begin the quiz</h2>
+            <div>
+                <button id="startGameBtn">
+                    Start
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="questionAswer" class="centerText">
+        <div class="">
+            <div id="question">
+            </div>
+            <ol id="answer">
+            </ol>
+            <div id="timer">
+                
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="endGame" class="centerText">
+        <div class="marginContainer">
+            <h2 class=""></h2>
+            <hr>
+            <form class="marginContainer">
+                <div id="initialContainer" class="flexdiv">
+                    <label for="initials">Initials</label>
+                    <input type="text" id="initials" required>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div>
+        <a href="/highscores.html" id="highscore-btn" class="btn">High Scores</a>
+        <ul id="question-answer-container"> </ul>
+
+    </div>
+    <script src="./assets/js/quiz.js"> </script>
+</body>
+
+</html>
