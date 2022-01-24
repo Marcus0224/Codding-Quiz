@@ -23,7 +23,7 @@ div {
   padding-right: 20px;
 }
 
- h1 {
+ header section {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
@@ -42,6 +42,16 @@ div {
   padding: 30px 40px;
 }
 
+.centerText {
+    display: flex;
+    margin-bottom: 4px;
+    width: 15%;
+    border-radius: 4px;
+    background: rgb(18, 93, 225);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
 .questions-title::after {
   content: " ";
   display: block;
@@ -50,7 +60,7 @@ div {
   height: 2px;
 }
 
-.choice-container {
+section {
     display: flex;
     margin-bottom: 00.8rem;
     width: 100%;
