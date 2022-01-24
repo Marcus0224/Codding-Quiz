@@ -30,7 +30,7 @@ var questionAnswers = [
     {
         question: "What does CSS stand for?",
         answer: ["Colorful Styles cheet", "Class Styles Sheet", "Cascading Style Sheet", "Computer Sheet Style"],
-        correctAnswer: "ana"
+        correctAnswer: "Cascading Style Sheet"
     },
     {
         question: "Which statement correctly stores date into the Web storage API?",
@@ -59,7 +59,7 @@ function nextQuestion(e) {
     if (e.target.textContent=== questionAnswers[questionIndex].correctAnswer) {
         console.log("this is correct")
     } else(
-        timer -= 5,
+        timer -= 15,
         console.log("this is wrong")
         )
         getAnswers()
@@ -70,6 +70,14 @@ function startQuiz() {
     getAnswers()
 }
 
+function submitScore() {
+    //document.getElmentById"initials"
+    console.log(document.getElementById ("initials").ariaValueMax, score);
+    var initials = document.getElementById("initials").ariaValueMax;
+    var points = score;
+    localStorage.setItem(initials, points);
+    quizScores();
+}
 //buttonEl.addEventListener("click", function () {
 
 //buttonEl.addEventListener("click", function() {
