@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 var timer = 100;
 var score = 0;
 var questions = 0;
@@ -17,7 +15,6 @@ function timerFunction() {
     //     timer--
     //     console.log(timer)
     // },1000)
->>>>>>> develop
 
 var questionAnswers = [
     {
@@ -67,10 +64,7 @@ function startQuiz() {
     getAnswers()
 }
 
-<<<<<<< HEAD
 buttonEl.addEventListener("click", function () {
-=======
->>>>>>> develop
 
 //buttonEl.addEventListener("click", function() {
 
