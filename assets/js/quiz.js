@@ -49,14 +49,20 @@ function getAnswers() {
     for (var i = 0; i < questionAnswers[questionIndex].answer.length; i++) {
         var listEl = document.createElement("li");
         listEl.textContent = questionAnswers[questionIndex].answer[i];
-        listEl.setAttribute("onclick", "nextQuestion()")
+        listEl.setAttribute("onclick", "nextQuestion(event)")
         document.getElementById("answer").appendChild(listEl);
     }
     questionIndex++;
     document.querySelector("button")
 }
-function getnextQuestion() {
-
+function nextQuestion(e) {
+    if (e.target.textContent=== questionAnswers[questionIndex].correctAnswer) {
+        console.log("this is correct")
+    } else(
+        timer -= 5,
+        console.log("this is wrong")
+        )
+        getAnswers()
 }
 
 function startQuiz() {
@@ -64,7 +70,7 @@ function startQuiz() {
     getAnswers()
 }
 
-buttonEl.addEventListener("click", function () {
+//buttonEl.addEventListener("click", function () {
 
 //buttonEl.addEventListener("click", function() {
 
@@ -77,4 +83,4 @@ document.getElementById("startGameBtn").addEventListener("click", function(){
     }else {
         startQuiz()
     }
-});
+})
